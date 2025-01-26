@@ -26,6 +26,7 @@
       p {
         font-size: small;
         width: 40%;
+        /* margin: 0 auto; */
       }
 
       nav ul li {
@@ -44,8 +45,29 @@
       }
 
       .image img {
-        max-width: 40%;
+        max-width: 30%;
         height: auto;
+        margin: 5em auto 0.5em auto;
+        display: block;
+      }
+
+      .image p {
+        text-align: center;
+        font-size: small;
+        margin: 0 auto;
+        font-style: italic;
+        max-width: 80%;
+      }
+
+      @media (max-width: 768px) {
+        p {
+          width: 100%;
+        }
+
+        .image img {
+          max-width: 80%;
+          margin-top: 2em;
+        }
       }
 
       .project {
@@ -57,7 +79,11 @@
   <body>
     <header>
       <h1>E N B O</h1>
-      <p>Sound archaeologist exploring the ancient connection between natural and synthetic breath and silence, seeing each moment as a note in the oldest song of life that resonates through all living things and times.</p>
+      <p>
+        Sound archaeologist exploring the ancient connection between natural and
+        synthetic breath and silence, seeing each moment as a note in the oldest
+        song of life that resonates through all living things and times.
+      </p>
     </header>
     <nav>
       <ul>
@@ -67,7 +93,11 @@
       </ul>
     </nav>
     <div class="image">
-        <img src="assets/deathwhistle.png" alt="Enbo's artwork" />
+      <img
+        src="assets/deathwhistle.png"
+        alt="A person is blowing a 3d printed death whistle"
+      />
+      <p>A person is blowing a 3d printed death whistle</p>
     </div>
   </body>
 </html>
