@@ -58,6 +58,13 @@
         margin: 0;
       }
 
+      video {
+        width: 100%;
+        height: auto;
+        max-width: 480px; /* Optional: limits size on larger screens */
+        display: block;
+      }
+
       @media (max-width: 768px) {
         .project img {
           max-width: 100%;
@@ -69,11 +76,13 @@
     <a href="../index.html" class="back-button">&lt; Back</a>
     <div class="project">
       <img src="../assets/usedTo.png" alt="used to event poster" />
-      <h1>Used To (2024)</h1>
-      <video width="480" height="854" autoplay loop controls muted>
-        <source src="../assets/UsedTo.mp4" type="video/mp4">
+      <br />
+      <video autoplay loop controls muted>
+        <source src="../assets/UsedTo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <br />
+      <h1>Used To (2024)</h1>
       <p>We adapt easily.</p>
       <p>
         We can get used to just about anything, Even the most ugly and absurd.
@@ -96,6 +105,7 @@
       <p style="font-style: italic">Co-created with Siiri Varis</p>
       <p style="font-style: italic">Used To is a project by @makan_al_hummus</p>
       <p style="font-style: italic">Image By Shuaijun Zhang</p>
+      <p style="font-style: italic">Video By Sveta & Olya</p>
     </div>
   </body>
 </html>
