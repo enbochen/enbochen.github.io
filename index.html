@@ -19,15 +19,15 @@
       gtag("config", "GT-KFT4F6D8");
     </script>
     <script>
-      let a = 0,
-        b = 1;
+      let a = 0n,
+        b = 1n;
       function updateNumber() {
-        document.getElementById("number").textContent = a;
+        document.getElementById("number").textContent = a.toString();
         let next = a + b;
         a = b;
         b = next;
       }
-      setInterval(updateNumber, 1000);
+      setInterval(updateNumber, 666);
     </script>
     <style>
       body {
@@ -104,6 +104,8 @@
         right: 1em;
         font-size: small;
         text-align: right;
+        width: 100%;
+        transition: filter 0.3s ease-in-out;
       }
 
       @media (max-width: 768px) {
