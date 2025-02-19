@@ -21,16 +21,13 @@
     <script>
       let a = 0,
         b = 1;
-
       function updateNumber() {
         document.getElementById("number").textContent = a;
-
         let next = a + b;
         a = b;
         b = next;
       }
-
-      setInterval(updateNumber, 1000); // Update every 1 second
+      setInterval(updateNumber, 1000);
     </script>
     <style>
       body {
