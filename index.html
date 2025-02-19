@@ -18,6 +18,20 @@
 
       gtag("config", "GT-KFT4F6D8");
     </script>
+    <script>
+      let a = 0,
+        b = 1;
+
+      function updateNumber() {
+        document.getElementById("number").textContent = a;
+
+        let next = a + b;
+        a = b;
+        b = next;
+      }
+
+      setInterval(updateNumber, 1000); // Update every 1 second
+    </script>
     <style>
       body {
         margin: 2em;
@@ -80,12 +94,19 @@
         max-width: 80%;
       }
 
-      footer {
+      #ig {
         position: fixed;
         bottom: 0;
         left: 1em;
-        width: 100%;
         font-size: small;
+      }
+
+      #number {
+        position: fixed;
+        bottom: 0;
+        right: 1em;
+        font-size: small;
+        text-align: right;
       }
 
       @media (max-width: 768px) {
@@ -109,9 +130,9 @@
     <header>
       <h1>E N B O</h1>
       <p>
-        a sound archaeologist exploring the ancient connection between natural and
-        synthetic breath and silence, seeing each moment as a note in the oldest
-        song of life that resonates through all living things and times.
+        a sound archaeologist exploring the ancient connection between natural
+        and synthetic breath and silence, seeing each moment as a note in the
+        oldest song of life that resonates through all living things and times.
       </p>
     </header>
     <br />
@@ -119,9 +140,7 @@
       <ul>
         <li><a href="projects/usedTo.html">USED TO</a></li>
         <li>
-          <a href="projects/originOfBeings.html"
-            >人之初 ORIGINS OF BEING</a
-          >
+          <a href="projects/originOfBeings.html">人之初 ORIGINS OF BEING</a>
         </li>
         <li>
           <a href="projects/distantSound.html">远音 THE DISTANT SOUND</a>
@@ -136,7 +155,8 @@
       <p>wind whispering through a 3D-printed death whistle</p>
     </div>
     <footer>
-      <p>@_obne_</p>
+      <p id="ig">@_obne_</p>
+      <p id="number"></p>
     </footer>
   </body>
 </html>
