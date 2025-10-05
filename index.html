@@ -94,6 +94,17 @@
         height: auto;
         margin: 5em auto 0.5em auto;
         display: block;
+        opacity: 0.6;
+        animation: imageOpacityPulse 6s ease-in-out infinite alternate;
+      }
+
+      @keyframes imageOpacityPulse {
+        from {
+          opacity: 0.6;
+        }
+        to {
+          opacity: 0.9;
+        }
       }
 
       .image p {
