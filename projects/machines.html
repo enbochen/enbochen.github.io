@@ -53,6 +53,12 @@
         margin: 1em 0;
       }
 
+      /* Video container default sizing */
+      .video-container {
+        width: 60%;
+        margin: 0 auto;
+      }
+
       p {
         width: 80%;
       }
@@ -61,13 +67,16 @@
         .project img {
           max-width: 100%;
         }
+        .video-container {
+          width: 100% !important;
+        }
       }
     </style>
   </head>
   <body>
     <a href="../index.html" class="back-button">&lt; Back</a>
     <div class="project">
-      <div style="padding: 56.25% 0 0 0; position: relative">
+      <div class="video-container" style="padding: 56.25% 0 0 0; position: relative">
         <iframe
           src="https://player.vimeo.com/video/1114661105?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           frameborder="0"
